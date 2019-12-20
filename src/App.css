@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 100px auto 50vh;
+  grid-template-columns: 300px auto;
+  grid-row-gap: 20px;
+}
+
+.mixer__groups{
+  grid-column: span 2 / auto;
+}
+
+h1{
+  background: grey;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px black;
+  cursor: pointer;
+  opacity: .5;
+  transition: all .3s;
+  grid-column: span 1 / auto
+}
+
+h1:hover{
+  background: black;
+  color: white;
+  opacity: 1;
+}
+
+.mixer__result{
+  width: 100%;
+  grid-column: span 2 / auto;
+  margin-top: 20px;
+}
+
+p{
+  margin: 0;
+  font-size: 14px;
+}

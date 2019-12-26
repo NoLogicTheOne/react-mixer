@@ -1,20 +1,11 @@
-.mixer__groups{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0;
-}
-
 .mixer__group{
     width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    grid-template-rows: 30px 300px;
+    height: 300px;
 }
 
 .mixer__load_link {
 	cursor: help;
-}
+}   
 
 .mixer__load_link::after {
 	background: rgba(0, 0, 0, 0.8);
@@ -23,17 +14,16 @@
 	color: #FFF;
 	content: attr(data-tooltip); /* Главная часть кода, определяющая содержимое всплывающей подсказки */
 	margin-top: -24px;
-	opacity: 0; /* Наш элемент прозрачен... */
+	opacity: 0;
 	padding: 3px 7px;
 	position: absolute;
-	visibility: hidden; /* ...и скрыт. */
-			
-	transition: all 0.4s ease-in-out; /* Добавить плавности по вкусу */
+	visibility: hidden;
+	transition: all 0.2s ease-in-out;
 }
 		
 .mixer__load_link:hover::after {
-	opacity: 1; /* Показываем его */
-	visibility: visible;
+	opacity: 1;
+    visibility: visible;
 }
 
 .mixer__load_link{
@@ -48,7 +38,6 @@
 
 .mixer__sample_wrapper,
 .mixer__load_link_wrapper{
-    grid-column: span 2;
     padding: 10px;
     border: 1px solid black;
     border-left: none;
@@ -58,13 +47,11 @@
 .mixer__sample_header,
 .mixer__load_search{
     box-sizing: border-box;
-    grid-column: auto
 }
 
 .mixer__sample_load,
 .mixer__load_sample{
     cursor: pointer;
-    grid-column: auto
 }
 
 

@@ -1,24 +1,18 @@
 .App {
   text-align: center;
-  display: grid;
-  grid-template-rows: 100px auto 50vh;
-  grid-template-columns: 300px auto;
-  grid-row-gap: 20px;
 }
 
 .mixer__groups{
-  grid-column: span 2 / auto;
+  display: flex;
 }
 
 h1{
-  background: grey;
-  padding: 0 20px;
   border-radius: 10px;
+  border: 2px solid black;
   box-shadow: 5px 5px 10px black;
   cursor: pointer;
   opacity: .5;
   transition: all .3s;
-  grid-column: span 1 / auto
 }
 
 h1:hover{
@@ -29,7 +23,6 @@ h1:hover{
 
 .mixer__result{
   width: 100%;
-  grid-column: span 2 / auto;
   margin-top: 20px;
 }
 

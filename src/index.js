@@ -9,8 +9,6 @@ import {data} from "./model/data/initialState.js"
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-import './index.css'
-
 const reducer = combineReducers(reducers)
 // const store = createStore(reducer, data)
 const store = createStore(reducer, loadState())

@@ -22,7 +22,7 @@ const Groups = ({groups, addWindow, ...throwed}) => {
             className="mixer__add-group"
             id="mixer__add-group"
             onClick={addWindow}
-        />
+        >Add Mix</button>
     )
 
     return (

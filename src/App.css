@@ -3,7 +3,11 @@
 }
 
 .mixer__groups{
+  margin-top: 40px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
 h1{

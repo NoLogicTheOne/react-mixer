@@ -1,6 +1,7 @@
 .mixer__group{
-    width: 100%;
+    width: 200px;
     height: 300px;
+    margin: 10px;
 }
 
 .mixer__load_link {
@@ -38,20 +39,23 @@
 
 .mixer__sample_wrapper,
 .mixer__load_link_wrapper{
+    width: 100%;
+    height: 100%;
     padding: 10px;
     border: 1px solid black;
-    border-left: none;
     overflow: auto;
+    box-sizing: border-box;
 }
 
 .mixer__sample_header,
 .mixer__load_search{
+    display: inline-block;
     box-sizing: border-box;
+    display: inline-block;
 }
 
 .mixer__sample_load,
 .mixer__load_sample{
     cursor: pointer;
+    float: right;
 }
-
-
